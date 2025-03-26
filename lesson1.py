@@ -1,5 +1,4 @@
 
-
 # Однострочные комментарии
 
 """
@@ -11,23 +10,74 @@
 """
 
 # int - (числа/integer) не изменяемый целочисленный тип данных
-num1 = 1
-num2 = 2
-num3 = 3
+any_name = 1
+# any_name это название переменной
+# 1 это целочисленная переменная (интежер)
+
+# str - (строка/string) не изменяемый строковый тип данных
+djanhongir = "Djahongir"
+aichurok = 'Aichurok in Bali'
+
+# float - (цисла с плавающей точкой) не изменяемый тип данных
+float1 = 12.23
+float2 = 1.33
+
+# boolean - (булевые значения) не изменяемый тип данных
+status = True
+is_archived = False
+
+# операторы сравнения
+# == равно ли
+# != не равно
+# >= больше или равно
+# <= меньше или равно
+# > больше
+# < меньше
+
+# # print(float1 == float2)
+# # print(float1 != float2)
+# # print(float1 > float2)
+# # print(float1 >= float2)
+# # print(float1 < float2)
+# # print(float1 <= float2)
+#
+# # int() - приводим тип данных в интежер
+# print(int("5"))
+# # str() - приводим тип данных в строку
+# print(str(5))
+# # float() - приводим тип данных в флоат
+# print(float("5"))
+# # bool() - приводим тип данных в булеан
+# # True == 1
+# # False == 0
+# print(bool(1))
+# # type() - выводим тип данных переменной
+# print(type(str(5)))
+# input() - пользователь вводит данные с консоли
+# данные с консоли имеют тип данных строка
+# len() - получаем длину строки
+# s1 = "Aichurok"
+# print(len(s1))
+
+# aichurok = input("Ввeдите имя: ")
+# print(type(aichurok))
+
 
 # age = int(input("Введите ваш возраст: "))  # Ввод числа
-# print("Ваш возраст: ", age)
+# print("Ваш возраст:", age)
 # print(type(age))  # <class 'int'>
-#
-a = 10
-b = 32
-print(a + b + 2)  # 13 (сложение)
-print(a - b / 22)  # 7 (вычитание)
-print(a * b)  # 30 (умножение)
-print(a // b)  # 3 (целочисленное деление)
-print(a % b)  # 1 (остаток от деления)
-print(a ** b)  # 1000 (возведение в степень)
 
+
+a = 10
+b = 3
+# print(a + b)  # 13 (сложение)
+# print(a - b)  # 7 (вычитание)
+# print(a * b)  # 30 (умножение)
+# print(a // b)  # 3 (целочисленное деление)
+# print(a / b)  # 3 (деление с остатком)
+# print(a % b)  # 1 (остаток от деления)
+# print(a ** b)  # 1000 (возведение в степень)
+#
 # pi = float(input("Введите число с плавающей точкой: "))  # Ввод float
 # print("Вы ввели:", pi)
 # print(type(pi))  # <class 'float'>
@@ -38,15 +88,11 @@ print(a ** b)  # 1000 (возведение в степень)
 # print(type(num_float))  # <class 'float'>
 
 
-# str - (строка/string) не изменяемый строковый тип данных
-s1 = "string"
-enter = 'Логин'
-
 # name = input("Введите ваше имя: ")  # Ввод строки
 # print("Привет, " + name + "!")
 # print(type(name))  # <class 'str'>
-# text = """Это многострочный текст в Python"""
-# print(text)
+# # text = """Это многострочный текст в Python"""
+# # print(text)
 # word = "Python"
 # print(word)
 # print(word[0])  # P
@@ -55,14 +101,14 @@ enter = 'Логин'
 # number = 42
 # num_str = str(number)
 # print(type(num_str))  # <class 'str'>
+#
 
-a = 3
-b = 10
 # bool - может иметь только два состояния: True or False
 # is_python_easy = input("Python легкий? (да/нет): ") == "да"
 # print("Вы ответили:", is_python_easy)
 # print(type(is_python_easy))  # <class 'bool'>
-# a = b
+# a = 3
+# b = 10
 # print(a >= b)  # False
 # print(a <= b)  # True
 # print(a == b)  # False
@@ -70,6 +116,9 @@ b = 10
 # print(True and False)  # False
 # print(True or False)  # True
 # print(not True)  # False
+# print(a == b and a > b and a < b)  # False
+# print(a > b or a != b)  # True
+# print(False or True)
 
 
 
