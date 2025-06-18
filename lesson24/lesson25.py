@@ -28,13 +28,16 @@
 
 import requests
 
-def basic_request():
-    url = "https://api.example.com/data"
-    response = requests.get(url)
-    print("Status code:", response.status_code)  # 200
-    print("Raw response:", response.text)        # сырой текст ответа
-    print("Parsed response:", response.json())    # преобразует JSON в словарь
 
+
+def basic_request():
+    url_countries = 'https://restcountries.com/v3.1/all'
+    response = requests.get(url_countries)
+    print("Status code:", response.status_code)  # 200
+    # print("Raw response:", response.text)        # сырой текст ответа
+    # print("Parsed response:", response.json())    # преобразует JSON в словарь
+
+# basic_request()
 # 🔸 Важные методы requests
 
 # HTTP методы:
@@ -58,7 +61,7 @@ def get_data_from_api():
 
 def fetch_weather(city):
     # Получаем погоду для указанного города
-    url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid=YOUR_API_KEY"
+    url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid=5eb0a0f6f1c97be143dd682574c358b4"
     response = requests.get(url)
     return response.json()
 
@@ -80,12 +83,12 @@ def safe_request(url):
         response = requests.get(url)
         response.raise_for_status()  # вызовет ошибку, если статус не 2xx
         return response.json()
-    except requests.exceptions.RequestException as e:
+    except Exception as e:
         return f"Ошибка запроса: {e}"
 
 # Пример обработки ошибки:
-# response = safe_request("https://invalid-url.com")
-
+# response = safe_request(f"https://api.openweathermap.org/data/2.5/weather?q=Bishkek&appid=5eb0a0f6f1c97be143dd682574c358b4")
+# print(response)
 # 🔸 Практика
 
 def get_random_quote():
@@ -93,11 +96,13 @@ def get_random_quote():
     return safe_request(url)
 
 def get_exchange_rate():
-    url = "https://api.exchangerate.host/latest?base=USD&symbols=KZT"
-    return safe_request(url)
+    url = "https://api.weatherstack.com/forecast?access_key=19426f6f8308c9"
+    querystring = {"query": "New York", "forecast_days": 7}
+    return requests.get(url, params=querystring).json()
+# a6c6d14c3e7f22fd47dccdcd969d43f2
 
 def get_weather():
-    url = "https://api.openweathermap.org/data/2.5/weather?q=Almaty&appid=YOUR_API_KEY"
+    url = "https://api.openweathermap.org/data/2.5/weather?q=Almaty&appid=5eb0a0f6f1c97be143dd682574c358b4"
     return safe_request(url)
 
 # 🔸 Этические правила и безопасность
@@ -108,8 +113,25 @@ def get_weather():
 
 if __name__ == "__main__":
     # Пример использования
-    print(get_random_quote())
-    print(get_exchange_rate())
-    print(get_weather())
+    # print(get_random_quote())
+    # print(get_exchange_rate())
+    # print(get_weather())
+
+
+    url = 'https://jsonplaceholder.typicode.com/posts'
+
+    payload = {
+      "userId": 2000,
+      "title": "Message",
+      "body": "Message body"
+    }
+
+    headers = {
+      'Content-Type': 'application/json'
+    }
+
+    response = requests.request("POST", url, headers=headers, json=payload)
+
+    print(response.text)
 
 

@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+}
+
+.yellow500 {
+    background-color: #ffdc22;
+    height: 500px;
+}
+
+.middle {
+    background-color: #1e1d37;
+    height: 1000px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.top-right {
+    font-size: 30px;
+    padding: 60px;
+}
+
+.photo {
+    position: relative;
+    top: 150px;
+}
+
+.top-left {
+
+}

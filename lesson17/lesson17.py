@@ -13,38 +13,91 @@
 # 'b' — бинарный режим
 
 # Пример:
-with open("example.txt", "r", encoding="utf-8") as file:
-    content = file.read()
-    print(content)
+# with open("example.txt", "r") as file:
+#     content = file.read()
+#     print(content)
+
+# .. - переход на один уровень выше
+# . - текущий уровень
+
 
 # Запись в файл:
 
-with open("output.txt", "w", encoding="utf-8") as file:
-    file.write("Это строка.\n")
+# with open("output.txt", "w") as file:
+#     file.write("Это строка.\n\tНовая строка.\n")
 
 # Добавление в файл:
 
-with open("output.txt", "a", encoding="utf-8") as file:
-    file.write("Добавленная строка\n")
+# with open("output.txt", "a", encoding="utf-8") as file:
+#     file.write("Добавленная строка\n")
+
+# while True:
+#     name = input("Enter your name: ")
+#     if name == "":
+#         break
+#
+#     password = input("Enter your password: ")
+#
+#     with open("logger.txt", "a", encoding="utf-8") as file:
+#         file.write(f"{name} {password} just checked in.\n")
+
+
 
 # Чтение построчно:
 
-with open("example.txt", "r", encoding="utf-8") as file:
-    for line in file:
-        print(line.strip())
+# with open("logger.txt", "r", encoding="utf-8") as file:
+#     d = {}
+#     for line in file:
+#         data = line.strip().split(" ")
+#         d[data[0]] = data[1]
+#
+# print(d)
 
 # Чтение в список:
 
-with open("example.txt", "r", encoding="utf-8") as file:
-    lines = file.readlines()
-    print(lines)
+# with open("example.txt", "r", encoding="utf-8") as file:
+#     lines = file.readlines()
+#     print(lines)
 
 # --- Ознакомительные задачи (10) ---
 
 # 1. Запроси у пользователя имя файла и выведи его содержимое.
+# def get_file_name():
+#     filename = input("Enter file name: ")
+#     return filename
+#
+# def get_file_content(filename):
+#     with open(filename, "r", encoding="utf-8") as file:
+#         print(file.read())
+#
+# file_name = get_file_name()
+# get_file_content(file_name)
+
 # 2. Напиши функцию, которая запрашивает строку и сохраняет её в файл.
+def get_string():
+    string = input("Enter string: ")
+    with open("second_issue.txt", 'w', encoding="utf-8") as file:
+        file.write(string)
+
+# get_string()
 # 3. Запиши 5 введённых пользователем чисел в файл.
+def get_numbers():
+    numbers = []
+    for i in range(5):
+        number = int(input("Enter number: "))
+        numbers.append(number)
+    with open("third_issue.txt", 'w', encoding="utf-8") as file:
+        file.write(f"{numbers}\n")
+
+get_numbers()
+
 # 4. Считай файл построчно и выведи строки в верхнем регистре.
+def read_file():
+    with open("third_issue.txt", "r", encoding="utf-8") as file:
+        for line in file:
+            print(line.strip().upper())
+
+read_file()
 # 5. Запроси имя и возраст и сохрани в файл в формате словаря.
 # 6. Прочитай файл и посчитай количество строк.
 # 7. Проверь, существует ли файл. Если да — удали его (используй os.remove()).

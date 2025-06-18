@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    margin: 0 auto;
+    height: 80px;
+    background-color: #3498db;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#about {
+    background-color: #f1c40f;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.about-left {
+    background-color: #0ff1ad;
+    height: 400px;
+    width: 400px;
+    margin-right: 30px;
+}
+.about-left-top {
+    width: 100%; /* Ensure the div takes up the full width */
+    height: 300px; /* Set a fixed height for the container (or use a percentage if needed) */
+}
+#about .about-left .about-left-top img {
+    width: 100%; /* Make the image fill the width of the container */
+    height: 100%; /* Make the image fill the height of the container */
+    object-fit: cover; /* Ensures the image covers the container, cropping if necessary */
+}
+
+.about-top-right {
+    background-color: #3498db;
+    height: 300px;
+    width: 400px;
+}
+.about-bottom-right {
+    background-color: #40f10f;
+    height: 100px;
+    width: 400px;
+}
+
+#services {
+    background-color: #40f10f;
+    height: 500px;
+}
+#skills {
+    background-color: #f10f88;
+    height: 500px;
+}
+#works {
+    background-color: #40f10f;
+    height: 500px;
+}
+#pricing {
+    background-color: #f16d0f;
+    height: 500px;
+}
+#feedback {
+    background-color: #0f22f1;
+    height: 500px;
+}
+#clients {
+    background-color: #0ff1ad;
+    height: 500px;
+}
+#blog {
+    background-color: #970ff1;
+    height: 500px;
+}
+#contact {
+    background-color: #0ff11a;
+    height: 500px;
+}
+#touch {
+    background-color: #f10f38;
+    height: 500px;
+}
+#map {
+    background-color: #0fb5f1;
+    height: 500px;
+}

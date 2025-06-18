@@ -38,12 +38,14 @@ animals = []
 # print(fruits[0])  # яблоко
 # print(fruits[-1])  # апельсин
 
+# fruits[1] = "груша"
+# print(fruits)
 # Списки могут содержать разные типы данных
-mixed_list = [42, "hello", 3.14, [1, 2, 3]]
-# print(mixed_list[1], mixed_list[0], mixed_list[3][2], mixed_list)  # Доступ ко второму элементу вложенного списка → 2
-# print(mixed_list[3][0])
+mixed_list = [42, "hello", 3.14, [1, 2, [33, 55, 77]]]
+# print(mixed_list[3][2][0])  # Доступ ко второму элементу вложенного списка → 2
+
 # negative indexes
-# print(mixed_list[-1][-1])
+# print(mixed_list[-1][-1][-1])
 
 # editing index
 # print(mixed_list)
@@ -63,7 +65,7 @@ ones = [1] * 10
 
 # print(fruits)
 # print("апельсин" in fruits)
-# print("banana" in fruits)
+# print("Банан" in fruits)
 # print("bananas" in mixed_list)
 
 # 4. Методы списков
@@ -74,21 +76,22 @@ ones = [1] * 10
 # print(fruits)
 fruits.append("ананас")
 # print(fruits)
-fruits.insert(1, "груша")
+fruits.insert(2, "груша")
 # print(fruits)
-ananas = fruits.pop()
+returned_value = fruits.pop()
+# print(returned_value)
 # print(fruits)
 # print(mixed_list)
 # mixed_list.pop()
 
 # print(mixed_list)
-mixed_list.remove(42)
+mixed_list.remove('first lesson')
 # print(mixed_list)
 
-mixed_list.append(33.11)
+# mixed_list.append(33.11)
 # print(mixed_list)
 # print(mixed_list.index(33.11))
-# print(mixed_list)
+# # print(mixed_list)
 # print(mixed_list.count(33.11))
 # mixed_list.append(33.11)
 # print(mixed_list)
@@ -103,9 +106,10 @@ numbers = [2, 6, 1, 9, 3, 4, 7]
 # numbers.sort()
 # print(numbers)
 #
-# print(numbers)
-# print(numbers[2:5:2])  # [start:stop:step]
-# print(numbers[-2:1:-1])
+print(numbers)
+# print(numbers[2:4])  # [start(including):stop(not including):step]
+# print(numbers[-2:1:-4])
+print(numbers[::-1])
 
 
 # ---- Задачи для закрепления ----
@@ -129,7 +133,6 @@ numbers = [2, 6, 1, 9, 3, 4, 7]
 # - Выведи результат.
 
 # a = [1, 2, 3, 4]
-# print(a[-1:1:-1])
 
 # 5. Работа со срезами
 # Дан список ["python", "java", "c++", "javascript", "php"].
@@ -146,9 +149,3 @@ numbers = [2, 6, 1, 9, 3, 4, 7]
 # 7. Вложенные списки
 # Дан список [[1, 2], [3, 4], [5, 6]].
 # Выведи 4, обратившись к элементу по индексу.
-
-# ---- Заключение ----
-# - Списки – мощный инструмент в Python.
-# - Позволяют хранить и изменять данные.
-# - Множество методов помогают работать с элементами эффективно.
-

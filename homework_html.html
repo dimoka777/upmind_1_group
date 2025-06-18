@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Домашнее задание: Урок 21 - HTML</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+    h1, h2 { color: #2c3e50; }
+    .task { background: #f9f9f9; padding: 15px; margin-bottom: 20px; border-left: 4px solid #3498db; }
+    .example { background: #eee; padding: 10px; margin: 10px 0; }
+    pre { background: #2c3e50; color: #ecf0f1; padding: 10px; overflow-x: auto; }
+  </style>
+</head>
+<body>
+  <h1>Домашнее задание: Урок 21 - HTML</h1>
+
+  <!-- Задача 1 -->
+  <div class="task">
+    <h2>Задача 1: Базовая структура</h2>
+    <p>Создайте HTML-документ с базовой структурой:</p>
+    <ul>
+      <li>Доктайп HTML5</li>
+      <li>Корневой элемент с атрибутом lang="ru"</li>
+      <li>Секция head с title "Моя первая страница"</li>
+      <li>Тело документа с заголовком h1 "Привет, мир!"</li>
+    </ul>
+    <div class="example">
+      <strong>Пример результата:</strong>
+      <img src="https://via.placeholder.com/600x100?text=Заголовок+Привет+мир" alt="Пример">
+    </div>
+  </div>
+
+  <!-- Задача 2 -->
+  <div class="task">
+    <h2>Задача 2: Семантическая разметка</h2>
+    <p>Создайте страницу "О себе" с использованием семантических тегов:</p>
+    <ol>
+      <li>header с вашим именем</li>
+      <li>main с 2-3 абзацами о ваших интересах</li>
+      <li>aside с контактной информацией</li>
+      <li>footer с копирайтом</li>
+    </ol>
+    <pre><code>&lt;header&gt;Иван Иванов&lt;/header&gt;
+&lt;main&gt;
+  &lt;p&gt;Я увлекаюсь программированием...&lt;/p&gt;
+&lt;/main&gt;
+&lt;aside&gt;Email: example@mail.com&lt;/aside&gt;
+&lt;footer&gt;© 2025&lt;/footer&gt;</code></pre>
+  </div>
+
+  <!-- Задача 3 -->
+  <div class="task">
+    <h2>Задача 3: Списки и изображения</h2>
+    <p>Создайте страницу с:</p>
+    <ul>
+      <li>Упорядоченным списком из 3 любимых фильмов/книг</li>
+      <li>Неупорядоченным списком из 3 хобби</li>
+      <li>Изображением (можно использовать <a href="https://via.placeholder.com/300" target="_blank">заглушку</a>)</li>
+    </ul>
+    <div class="example">
+      <strong>Пример:</strong>
+      <ol>
+        <li>Фильм 1</li>
+        <li>Фильм 2</li>
+      </ol>
+      <ul>
+        <li>Хобби 1</li>
+        <li>Хобби 2</li>
+      </ul>
+      <img src="https://via.placeholder.com/150" alt="Пример изображения">
+    </div>
+  </div>
+
+  <!-- Задача 4 -->
+  <div class="task">
+    <h2>Задача 4: Форма обратной связи</h2>
+    <p>Создайте форму с полями:</p>
+    <dl>
+      <dt>Имя (текстовое поле)</dt>
+      <dd>Обязательное для заполнения</dd>
+      <dt>Email (поле для email)</dt>
+      <dd>С placeholder "example@mail.com"</dd>
+      <dt>Сообщение (textarea)</dt>
+      <dd>Минимум 10 символов</dd>
+      <dt>Кнопка отправки</dt>
+    </dl>
+    <pre><code>&lt;form&gt;
+  &lt;input type="text" name="name" required&gt;
+  &lt;input type="email" placeholder="example@mail.com"&gt;
+  &lt;textarea minlength="10"&gt;&lt;/textarea&gt;
+  &lt;button type="submit"&gt;Отправить&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+  </div>
+
+  <!-- Задача 5 (дополнительная) -->
+  <div class="task">
+    <h2>Задача 5*: Сложная структура</h2>
+    <p>Создайте страницу блога с:</p>
+    <ul>
+      <li>Шапкой (header) с навигацией (nav) и 3 ссылками</li>
+      <li>Основным содержанием (main) с 2 статьями (article), каждая с:
+        <ul>
+          <li>Заголовком (h2)</li>
+          <li>Датой публикации (time)</li>
+          <li>Изображением</li>
+          <li>Абзацем текста</li>
+        </ul>
+      </li>
+      <li>Боковой панелью (aside) с поиском (form) и архивом (ul)</li>
+      <li>Подвалом (footer) с копирайтом</li>
+    </ul>
+    <div class="example">
+      <img src="https://via.placeholder.com/600x300?text=Макет+блога" alt="Макет">
+    </div>
+  </div>
+
+  <footer>
+    <p>Выполните задания и сохраните файлы как:</p>
+    <ul>
+      <li>task1.html</li>
+      <li>task2.html</li>
+      <li>...</li>
+    </ul>
+    <p>Для задач используйте любые тексты и изображения (можно-заглушки).</p>
+  </footer>
+</body>
+</html>

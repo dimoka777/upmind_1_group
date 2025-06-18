@@ -1,0 +1,51 @@
+[
+    {
+        "name": "Alice Johnson",
+        "city": "New York",
+        "message": "*** message"
+    },
+    {
+        "name": "Bob Smith",
+        "city": "Los Angeles",
+        "message": "*** good message"
+    },
+    {
+        "name": "Charlie Brown",
+        "city": "Chicago",
+        "message": "*** good message ***"
+    },
+    {
+        "name": "David Wilson",
+        "city": "Houston",
+        "message": "good message"
+    },
+    {
+        "name": "Eva Davis",
+        "city": "Phoenix",
+        "message": "good message "
+    },
+    {
+        "name": "Anna Lee",
+        "city": "San Francisco",
+        "message": "*** good message"
+    },
+    {
+        "name": "Dmitry Ivanov",
+        "city": "Moscow",
+        "message": "*** good message"
+    },
+    {
+        "name": "Elena Petrova",
+        "city": "Saint Petersburg",
+        "message": "*** good message ***"
+    },
+    {
+        "name": "Lucas White",
+        "city": "London"
+    },
+    {
+        "name": "Sophia Green",
+        "city": "Berlin",
+        "message": "*** good message"
+    }
+]

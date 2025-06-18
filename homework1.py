@@ -27,23 +27,6 @@
 # print(stroka[1:1])
 
 
-# games = {
-#     "race": 14,
-#     "durak": 2,
-#     "poker": 10
-# }
-# print(max(games))
-#
-# print(games.len())
-
-products = {
-    "Breat": 50, # не работает
-    "milk": 100,
-    "sugar": 80
-}
-products["milk"] += (products["milk"] / 100 * 10)
-products["sugar"] += 1
-print(products)
 
 
 

@@ -1,0 +1,55 @@
+Урок 1: Комментарии, integer, string, boolean, float
+https://leetcode.com/problems/valid-number/
+https://leetcode.com/problems/string-to-integer-atoi/
+https://leetcode.com/problems/implement-strstr/
+https://leetcode.com/problems/detect-capital/
+https://leetcode.com/problems/uncommon-words-from-two-sentences/
+
+Урок 2: Методы integer, string, boolean, float
+https://leetcode.com/problems/reverse-integer/
+https://leetcode.com/problems/palindrome-number/
+https://leetcode.com/problems/longest-common-prefix/
+https://leetcode.com/problems/basic-calculator/
+https://leetcode.com/problems/132-pattern/
+
+Урок 4: Условные конструкции
+https://leetcode.com/problems/fizz-buzz/
+https://leetcode.com/problems/majority-element/
+https://leetcode.com/problems/power-of-two/
+https://leetcode.com/problems/single-number/
+https://leetcode.com/problems/happy-number/
+
+Урок 5: Списки
+https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+https://leetcode.com/problems/rotate-array/
+https://leetcode.com/problems/contains-duplicate/
+https://leetcode.com/problems/running-sum-of-1d-array/
+https://leetcode.com/problems/flatten-nested-list-iterator/
+
+Урок 6: Словари
+https://leetcode.com/problems/two-sum/
+https://leetcode.com/problems/valid-anagram/
+https://leetcode.com/problems/group-anagrams/
+https://leetcode.com/problems/number-of-ways-to-form-a-target-string-given-a-dictionary/
+https://leetcode.com/problems/implement-magic-dictionary/
+
+Урок 9: Кортежи и множества
+https://leetcode.com/problems/intersection-of-two-arrays/
+https://leetcode.com/problems/happy-number/
+https://leetcode.com/problems/contains-duplicate-ii/
+https://leetcode.com/problems/rings-and-rods/
+https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/
+
+Урок 11: Циклы for и while
+https://leetcode.com/problems/count-primes/
+https://leetcode.com/problems/linked-list-cycle/
+https://leetcode.com/problems/move-zeroes/
+https://leetcode.com/problems/binary-gap/
+https://leetcode.com/problems/keys-and-rooms/
+
+Урок 12: Прерывание циклов (break, continue, else)
+https://leetcode.com/problems/binary-gap/
+https://leetcode.com/problems/longest-word-in-dictionary/
+https://leetcode.com/problems/keys-and-rooms/
+https://leetcode.com/problems/detect-capital/
+https://leetcode.com/problems/uncommon-words-from-two-sentences/

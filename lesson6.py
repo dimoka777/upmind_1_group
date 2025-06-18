@@ -6,37 +6,57 @@
 # 2. Создание словаря:
 #    - Пустой словарь: my_dict = {}
 #    - Заполненный словарь:
+
 student = {
      "name": "Алексей",
      "age": 21,
-     "city": "Москва"
+     "city": "Москва",
+     True: "1",
+     25: False
 }
 
 # 3. Обращение к значениям по ключу:
-#    print(student["name"])  # Алексей
+# print(student["name"])  # Алексей
 
-# 4. Методы словарей:
-#    - .get(key[, default]) — безопасное получение значения.
-#    - .keys() — возвращает все ключи словаря.
-#    - .values() — возвращает все значения.
-#    - .items() — возвращает пары (ключ, значение).
-#    - .update() — обновляет словарь.
-#    - .pop(key[, default]) — удаляет ключ и возвращает его значение.
-#    - .clear() — очищает словарь.
+# # 4. Методы словарей:
+# #    - .get(key[, default]) — безопасное получение значения.
+# print(student.get('age223'))
+# # print(student['age223'])
+# #    - .keys() — возвращает все ключи словаря.
+# print(student.keys())
+# #    - .values() — возвращает все значения.
+# print(student.values())
+# #    - .items() — возвращает пары (ключ, значение).
+# print(student.items())
+# #    - .update() — обновляет словарь.
+# student.update({"region": "Bali", "city": "Denpasar"})
+# print(student)
+# #    - .pop(key[, default]) — удаляет ключ и возвращает его значение.
+# student.pop('city')
+# print(student)
+# #    - .clear() — очищает словарь.
+# student.clear()
+# print(student)
 
-
+print(student)
 # 5. Добавление и изменение элементов:
-#    student["age"] = 22  # Изменение значения
-#    student["grade"] = "A"  # Добавление новой пары
-
+# student["age"] = 22 # Изменение значения
+# student["grade"] = "A" # Добавление новой пары
+# print(student)
 # 6. Удаление элементов:
-#    student.pop("city")  # Удаляет пару с ключом 'city'
-#    del student["name"]  # Удаляет ключ 'name'
-
+# student.pop("city")  # Удаляет пару с ключом 'city'
+# del student["name"]  # Удаляет ключ 'name'
+# print(student)
 # 7. Проверка наличия ключа:
-#    if "name" in student:
-#        print("Ключ 'name' есть в словаре!")
+# if "name" in student:
+#      print("Ключ 'name' есть в словаре!")
 
+# 8. get and pop with default
+# print(student)
+# city = student.get('aisalkyn', 'Aisalkyn')
+# print(city)
+# city = student.pop('city', 'Denpasar')
+# print(city)
 
 # Ознакомительные задачи:
 # 1. Создай словарь, содержащий информацию о книге (название, автор, год издания). Выведи автора книги.
